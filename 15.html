@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var w=parseInt(prompt("Enter the weight"));
+        var h=parseInt(prompt("Enter the height in meter"));
+        var bmi=w/(h**2);
+        document.write("BMI is ",bmi,'</br>');
+        if(bmi<18.5){
+            document.write("UNDERWEIGHT");
+        }
+        else if(bmi>=18.5 && bmi<=24.9){
+            document.write("NORMAL WEIGHT");
+        }
+        else if(bmi>=25 && bmi<=29.9){
+            document.write("NORMAL WEIGHT");
+        }
+        else if(bmi>=30){
+            document.write("OBESE");
+        }
+    </script>
+</body>
+</html>
